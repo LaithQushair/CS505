@@ -1,0 +1,18 @@
+import torch
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+
+model.eval()
+with torch.no_grad():
+    test_preds = model(X_test)
+    predicted_labels = torch.argmax(test_preds, dim=1)
+y_true = y_test.cpu()
+y_pred = predicted_labels.cpu()
+cm = confusion_matrix(y_true, y_pred, normalize='true')
+class_names = ['Informative', 'Argumentative', 'Persuasive']
+disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=class_names)
+disp.plot(cmap=plt.cm.Blues)
+plt.xlabel("Predicted Label")
+plt.ylabel("True Label")
+plt.grid(False)
+plt.show()
