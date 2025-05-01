@@ -4,4 +4,4 @@ Introduction: The purpose of this tool is to break text down into individual sen
 
 This repository contains the raw code used for the data processing, model construction, and deployment on Gradio Spaces. The tool can be utilized using this link: https://huggingface.co/spaces/LaithQ/Tone
 
-The file paths used throughout the code are not accurate as the training and data processing was performed on different platforms. The majority of the data cannot be found in this repository. The data used for argumentative and persuasive tones can be found here: https://huggingface.co/datasets/Yusuf5/OpenCaselist
+The file paths used throughout the code are not accurate as the training and data processing was performed on different platforms (SCC and Google Colab). The majority of the data cannot be found in this repository due to size constraints. The data used for argumentative and persuasive tones can be found here: https://huggingface.co/datasets/Yusuf5/OpenCaselist
