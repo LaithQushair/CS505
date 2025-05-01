@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 x = list(range(1, 11))
 y = losses 
 print(losses)
-plt.semilogy(x, y, marker='o', linestyle='-', color='blue', label='y = x')
+plt.semilogy(x, y, marker='o', linestyle='-')
 plt.title('Loss versus Epoch')
 plt.xlabel('Epoches')
 plt.ylabel('Loss')
