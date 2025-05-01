@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+x = list(range(1, 11))
+y = losses 
+print(losses)
+plt.semilogy(x, y, marker='o', linestyle='-', color='blue', label='y = x')
+plt.title('Loss versus Epoch')
+plt.xlabel('Epoches')
+plt.ylabel('Loss')
+plt.grid(True)
+plt.legend()
+plt.show()
